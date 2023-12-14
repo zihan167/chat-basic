@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+	<title>Chatroom</title>
+	<link type="text/css" rel="stylesheet" href="css/chat.css">
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/socket.io.js"></script>
+	<script type="text/javascript" src="js/chat.js"></script>
+</head>
+<body>
+	
+	<div class="login-wrap">
+		<div class="login-con">
+			<h2><font color="#706f6f">𝐍𝐓𝐍𝐔 𝘤𝘩𝘢𝘵𝘳𝘰𝘰𝘮</font></h2>
+			<input type="text" placeholder="Enter your name" id="loginName">
+			<button class="login-btn">LOG IN</button>
+		</div>
+	</div>
+	
+	<div class="chat-wrap hide">
+		<div class="chat-wrap-top">
+			<h1> 𝐍𝐓𝐍𝐔 𝘤𝘩𝘢𝘵𝘳𝘰𝘰𝘮</h1>
+			<h3 id="chat-title"></h3><h5 id="chat-title2"></h5>
+	
+			<!-- <button class="leaveBtn">✘</button> -->
+		</div>
+		<div class="chat-wrap-main" id="chat-wrap">
+			<div class="chat-con" clearfix></div>
+			<div class="bottom">
+				<input type="text" id="sendtxt" placeholder="Type a message">
+				<button class="sendBtn">
+					<img src="images/send.png">
+				</button>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
